@@ -7,11 +7,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddbikeComponent } from './addbike/addbike.component';
+import { ViewbikeComponent } from './viewbike/viewbike.component';
 
 
 const appRoutes:Routes=[
   {
     path:"",component:AddbikeComponent
+  },
+  {
+    path:"view",component:ViewbikeComponent
   }
   
 ]
@@ -20,7 +24,8 @@ const appRoutes:Routes=[
   declarations: [
     AppComponent,
     NavbarComponent,
-    AddbikeComponent
+    AddbikeComponent,
+    ViewbikeComponent
   ],
   imports: [
     BrowserModule,

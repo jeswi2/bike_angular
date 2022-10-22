@@ -6,18 +6,21 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AddbikeComponent } from './addbike/addbike.component';
 
 
 const appRoutes:Routes=[
   {
-    path:"",
+    path:"",component:AddbikeComponent
   }
+  
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    AddbikeComponent
   ],
   imports: [
     BrowserModule,

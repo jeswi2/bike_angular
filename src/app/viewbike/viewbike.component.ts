@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-viewbike',
@@ -7,8 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewbikeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private myapi:ApiService) { 
+    this.fetchData()
+  }
 
+  fetchData=()=>{
+    this.myapi.viewbike().subscribe(
+      (data)=>{
+        this.bikedata=data
+      }
+    )
+    
+  }
 
   bikedata:any=[]
 

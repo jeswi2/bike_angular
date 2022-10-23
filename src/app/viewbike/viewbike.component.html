@@ -7,6 +7,7 @@
 <table class="table table-boreded table-stripped-columns">
     <thead>
       <tr>
+        
         <th scope="col">Bike Name</th>
         <th scope="col">Bike Brand</th>
         <th scope="col">Bike Colour</th>
@@ -15,14 +16,14 @@
       </tr>
     </thead>
     <tbody class="table-group-divider">
-        
+
       <tr *ngFor="let i of bikedata">
        
         <td>{{i.name}}</td>
-        <td>{{i.brnad}}</td>
-        <td>{{i.colour}}</td>
+        <td>{{i.brand}}</td>
+        <td>{{i.color}}</td>
         <td>{{i.price}}</td>
-        <td>{{i.Desc}}</td>
+        <td>{{i.description}}</td>
       </tr>
      
     </tbody>

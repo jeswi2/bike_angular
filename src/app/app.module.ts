@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddbikeComponent } from './addbike/addbike.component';
 import { ViewbikeComponent } from './viewbike/viewbike.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes:Routes=[
   {
@@ -31,7 +31,8 @@ const appRoutes:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
